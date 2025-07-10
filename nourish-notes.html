@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish Notes | Nourish to Flourish</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="nav-logo">
+                <img src="nourihstoflourishlogo.png" alt="Nourish to Flourish Logo" style="height: 60px; vertical-align: middle;">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item has-dropdown" id="nav-home">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <ul class="nav-dropdown" id="dropdown-home">
+                        <li><a href="index.html#about" class="dropdown-link">Info</a></li>
+                        <li><a href="index.html#team" class="dropdown-link">Team</a></li>
+                        <li><a href="index.html#contact" class="dropdown-link">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" id="nav-notes">
+                    <a href="nourish-notes.html" class="nav-link active">Nourish Notes</a>
+                </li>
+                <li class="nav-item" id="nav-news">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nourish Notes Title & Description -->
+    <section class="nourish-notes-hero">
+        <div class="container">
+            <h1 class="nourish-notes-title">Nourish Notes</h1>
+            <p class="nourish-notes-desc">Our research and articles on the ingredients we use every day, helping you make informed, healthier choices.</p>
+        </div>
+    </section>
+
+    <!-- Featured News Bar -->
+    <section class="featured-news-bar">
+        <div class="container">
+            <div class="featured-news-list">
+                <div class="featured-news-placeholder">News and updates coming soon.</div>
+            </div>
+            <div class="featured-news-action">
+                <a href="#" class="btn btn-secondary" id="goToNewsPageBtn">Go to News Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Main Area -->
+    <section class="blog-main">
+        <div class="container">
+            <div class="blog-controls">
+                <div class="search-bar">
+                    <input type="text" id="blogSearchInput" placeholder="Search articles..." disabled>
+                    <button id="blogSearchBtn" disabled><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-bar">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" disabled>
+                        <option value="date-desc">Newest</option>
+                        <option value="date-asc">Oldest</option>
+                        <option value="title-az">Title A-Z</option>
+                        <option value="title-za">Title Z-A</option>
+                    </select>
+                </div>
+            </div>
+            <div class="blog-articles" id="blogArticles">
+                <div class="blog-placeholder">No articles yet — coming soon.</div>
+                <div class="blog-controls-disabled-msg">Search and filter will be available once articles are added.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="nourish to floursih logo svg.png" alt="Nourish to Flourish White Logo" style="height: 60px; vertical-align: middle;">
+                        <h3>Nourish to Flourish</h3>
+                        <p>Empowering healthier choices through education</p>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Join Our Community</h4>
+                        <p>Stay updated with the latest health insights and community events</p>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Nourish to Flourish. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/nourishtoflourish" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="nourish-notes.js"></script>
+</body>
+</html> 
